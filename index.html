@@ -1,0 +1,40 @@
+ <!DOCTYPE html> 
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		<meta charset="UTF-8">
+		<title>ChatApp</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="chat"> CHATAPP:
+		<div class="roomn">
+			<div class="roomn2">Room : </div>
+				<div class="roomn-nope">You are not connected, <br>
+				please give username and room
+			</div>
+		</div>
+			<input type="text" class="chat-name" placeholder="Username">
+			<input type="text" class="room-name" placeholder="Room name">
+			<div class="chat-messages">
+				<div class="chat-message">
+				</div>
+			</div>
+			<textarea placeholder="Press enter to send message"></textarea>
+			<div class="chat-status">Status: <span>Connected</span></div>
+		</div>
+		<script src="http://88.192.20.97:6060/socket.io/socket.io.js"></script>
+		<script src="http://88.192.20.97/chatapp2/javaengine2.js"></script>
+		<script src="http://88.192.20.97/chatapp2/javaengine.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+
+			$("textarea").hide();
+			$(".chat-messages").hide();
+			$(".roomn2").hide();
+
+		</script>
+	</body>
+
+</html>

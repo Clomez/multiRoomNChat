@@ -1,0 +1,25 @@
+ <!DOCTYPE html> 
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+		<meta charset="UTF-8">
+		<title>ChatApp</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="chat">
+			<input type="text" class="chat-name" placeholder="Your name">
+			<input type="text" class="room-name" placeholder="Room name">
+			<div class="chat-messages">
+				<div class="chat-message">
+				</div>
+			</div>
+			<textarea placeholder="type message..."></textarea>
+			<div class="chat-status">Status: <span>Idle</span></div>
+		</div>
+		<script src="http://88.192.20.97:6060/socket.io/socket.io.js"></script>
+		<script src="http://88.192.20.97/chatapp2/javaengine.js"></script>
+
+	</body>
+
+</html>
